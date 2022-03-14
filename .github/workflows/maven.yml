@@ -29,11 +29,15 @@ jobs:
       run: |
         mvn test
         npm test
+    - name: TI
+      run: mvn verify
     - uses: akhileshns/heroku-deploy@v3.12.12
       with:
         heroku_api_key: ${{secrets.HEROKU_API_KEY}}
         heroku_app_name: "mono87"
         heroku_email: "baghdalk@3il.fr"
+    - name: TI
+      run: mvn verify
     
         
     
