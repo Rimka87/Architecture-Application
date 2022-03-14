@@ -30,7 +30,7 @@ describe('RegisterService Service', () => {
       const login = 'abc';
       const email = 'test@test.com';
       const password = 'pass';
-      const langKey = 'FR';
+      const langKey = 'EN';
       const registration = new Registration(login, email, password, langKey);
 
       // WHEN
