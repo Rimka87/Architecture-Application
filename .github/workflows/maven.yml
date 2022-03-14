@@ -30,3 +30,11 @@ jobs:
         heroku_api_key: ${{secrets.HEROKU_API_KEY}}
         heroku_app_name: "mono87"
         heroku_email: "baghdalk@3il.fr"
+    - name: TU
+      run: |
+        mvnw test
+        npmw test
+        
+    
+      
+    
